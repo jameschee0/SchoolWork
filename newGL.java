@@ -9,11 +9,17 @@ import java.util.Scanner;
 
 class newGL{
 	public static void main(String[] args){
-		Scanner scan = new Scanner(System.in);
-		int[] in = new int[2];
+		Scanner scan = new Scanner(System.in);//Scanner Object
+		int[] in = new int[2];//integer variable
+		int[] primary = new int[2];//primary input values
 
-		System.out.println("gcd: "+gcd(in));
-		System.out.println("lcm: "+lcm(in));
+		for(int i=0;i<in.length;i++){
+			primary[i] = scan.nextInt();//getting inputs
+			in[i] = primary[i];
+		}
+
+		System.out.println("gcd: "+gcd(in));//printing gcd
+		System.out.println("lcm: "+lcm(primary,in));//printing lcm
 	}
 
 	public static int gcd(int[] in){ //Using Euclid's Algorithm
@@ -25,8 +31,8 @@ class newGL{
 		return in[0];
 	}
 
-	public static int lcm(int[] in){
-		int res = in[0]*(in[1]/gcd(in));
+	public static int lcm(int[] primary,int[] in){//Using GCD to get LCM
+		int res = primary[0]*(primary[1]/gcd(in));
 		return res;
 	}
 }
