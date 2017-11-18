@@ -1,3 +1,8 @@
+/*
+This program outputs boolean of prime number
+Created by James Chee 2017.11.18
+*/
+
 import java.util.Scanner;
 
 public class prime{

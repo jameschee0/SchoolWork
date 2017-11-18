@@ -1,3 +1,8 @@
+/*
+Testing Java program. Starting Exercise Example
+Created by James Chee 2017.11.18
+*/
+
 import java.util.Scanner;
 
 public class test{

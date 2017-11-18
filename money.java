@@ -1,3 +1,8 @@
+/*
+This program outputs lowest number of coins needed to add up to a certain number
+Created by James Chee 2017.11.18
+*/
+
 import java.util.Scanner;
 
 public class money{
