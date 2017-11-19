@@ -7,8 +7,6 @@ class prime2{
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
 
-		int i=0;
-
 		int a;
 		a = scan.nextInt();
 		boolean res = prime(a);
