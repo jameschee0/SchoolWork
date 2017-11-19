@@ -15,7 +15,7 @@ public class triangle{
 			in -= 1;
 		}
 		for(int i=1;(2*i-1)<=in;i++){
-			for(int j=1;j<=(in-i);j++)space();
+			for(int j=1;j<=(((in+1)/2)-i);j++)space();
 			for(int j=1;j<=(2*i-1);j++)star();
 			next();
 		}
